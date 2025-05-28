@@ -2,12 +2,14 @@
 {
     public class Product
     {
-        public string ProductId { get; set; }
-        public string SubCategoryId { get; set; }
+        public Guid Id { get; set; }
+        public Guid SubCategory_Id { get; set; }
         public string SKI { get; set; }
-        public string ProductName { get; set; }
-        public string ProductDescription { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime UpdatedAt { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public DateTime Created_At { get; set; }
+        public DateTime Updated_At { get; set; }
+
+        public string ProductCode { get; set; }
     }
 }

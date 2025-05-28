@@ -13,6 +13,11 @@ namespace NationBenefits.Context
 
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.HasDefaultSchema("product");
+        }
+
 
         public DbSet<Product> Products { get; set; }
         public DbSet<SubCategory> SubCategories { get; set; }
